@@ -1,5 +1,4 @@
 #include<iostream>
-#include<ctime>
 
 using namespace std;
 int reclin(int arr[],int front,int rear,int key){
@@ -14,7 +13,6 @@ int reclin(int arr[],int front,int rear,int key){
 
 }
 int main(){
-    clock_t t;
     int n,i,*arr,key,index;
     cout<<"Enter the number of elements"<<endl;
     cin>>n;
@@ -24,9 +22,9 @@ int main(){
     }
     cout<<"Key element?"<<endl;
     cin>>key;
-    t=clock();
+    
     index=reclin(arr,0,n-1,key);
-    t=clock()-t;
+    
     if(index==-1){
         cout<<"Element not found"<<endl;
     }
