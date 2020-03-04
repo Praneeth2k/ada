@@ -63,7 +63,8 @@ int main(){
     maxMeetings(s,f,n);
     return 0;
 }
-
+//output
+/*
 Enter the number of meetings
 6
 Enter the starting times of the meetings
@@ -79,3 +80,4 @@ Enter the starting times of the meetings
 Enter the ending times of the meeting in the same order
 112960 114515 81825 93424 54316 35533 73383 160252
 6 7 1 Total number of meetings: 3
+*/
