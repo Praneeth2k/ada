@@ -40,7 +40,7 @@ int piv_binse(int arr[],int l,int h,int key){
     int pivot=find_pivot(arr,l,h);
 
     if(pivot==-1){
-        return binse(arr,l,pivot-1,key);
+        return binse(arr,l,h,key);
     }
     if(arr[pivot]==key){
         return pivot;
