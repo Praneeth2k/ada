@@ -41,3 +41,40 @@ int main(){
     bfs(g,s-1,queue,visited,f,r,count,n);
     return 0;
 }
+/*
+output 1:
+Enter the number of vertices
+10
+Enter the values from the adjacency matrix of the graph
+0 1 1 1 0 0 0 0 0 0
+0 0 0 0 1 0 0 0 0 0
+0 0 0 0 0 1 0 0 0 0
+0 0 0 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 1 0 1
+0 0 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 1 0
+Enter the node to get all the nodes that are reachable from it
+1
+2 3 4 5 6 7 8 10 9
+
+output 2:
+Enter the number of vertices
+10
+Enter the values from the adjacency matrix of the graph
+0 1 1 1 0 0 0 0 0 0
+0 0 0 0 1 0 0 0 0 0
+0 0 0 0 0 1 0 0 0 0
+0 0 0 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 1 0 1
+0 0 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 1 0
+Enter the node to get all the nodes that are reachable from it
+4
+7 8 10 9
+*/
