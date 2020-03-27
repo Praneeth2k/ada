@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std; 
+#include<ctime>
   
 // Merges two subarrays of arr[]. First subarray is arr[l..m], Second subarray is arr[m+1..r] 
 void merge(int arr[], int l, int m, int r) 
@@ -83,33 +84,39 @@ void printArray(int A[], int size)
 } 
 
 int main() 
-{ 
+{   
+    clock_t t;
     int *arr,n,i;
     cout<<"Enter the number of elements"<<endl;
     cin>>n; 
     arr = new int[n];
     cout<<"Enter the elements"<<endl;
     for(i=0;i<n;i++){cin>>arr[i];} 
-  
+    t = clock();
     mergeSort(arr, 0, n - 1); 
+    t = clock() - t;
   
     cout<<"The sorted array is"<<endl; 
     printArray(arr, n); 
+    cout<<"The time taken to sort is "<<t;
     return 0; 
 } 
 
 /*
 Enter the number of elements
-8
+5
 Enter the elements
-4 2 3 2 56 7 4 8
+3 1 5 2 6
 The sorted array is
-2 2 3 4 4 7 8 56
+1 2 3 5 6
+The time taken to sort is 0
+
 
 Enter the number of elements
-4
+20
 Enter the elements
--9 -33 4 -10
+4 9 28 38 48 8 48 84 4032 0 0 20 939 9 32 4 2 9 8 111
 The sorted array is
--33 -10 -9 4
+0 0 2 4 4 8 8 9 9 9 20 28 32 38 48 48 84 111 939 4032
+The time taken to sort is 0
 */
