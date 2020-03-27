@@ -23,8 +23,6 @@ void merge(int ans[], int arr1[], int arr2[], int n)
         k++; 
     } 
   
-    /* Copy the remaining elements of L[], if there 
-       are any */
     while (i < n) 
     { 
         ans[k] = arr1[i]; 
@@ -32,8 +30,6 @@ void merge(int ans[], int arr1[], int arr2[], int n)
         k++; 
     } 
   
-    /* Copy the remaining elements of R[], if there 
-       are any */
     while (j < n) 
     { 
         ans[k] = arr2[j]; 
