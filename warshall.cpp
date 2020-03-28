@@ -4,25 +4,21 @@
 using namespace std;
 
 void warshall(int g[10][10], int n){
-    int graph[10][10][10];
+    
 
     int i,j,k;
-    for(i=1 ;i<=n;i++){
-        for(j=1; j<=n; j++){
-            graph[i][j][0] = g[i][j];
-        }
-    }
-    for(k=1;k<=n+1; k++){
+    
+    for(k=1;k<=n; k++){
         for(i=1; i<=n; i++){
             for(j=1; j<=n; j++){
-                graph[i][j][k] = graph[i][j][k-1] || (graph[i][k][k-1]&&graph[k][j][k-1]);
+                g[i][j] = g[i][j] || (g[i][k]&&g[k][j]);
             }
         }
     }
     cout<<"Transitive closure of the graph is\n";
     for(i=1; i<=n; i++){
         for(j=1; j<=n; j++){
-            cout<<graph[i][j][n]<<" ";
+            cout<<g[i][j]<<" ";
         }
         cout<<endl;
     }
