@@ -10,7 +10,7 @@ void floyd(int g[10][10], int n){
             }
         }
     }
-    cout<<"All pair shortest paths:\n";
+    cout<<"All pair shortest path:\n";
     for(i=1; i<=n; i++){
         for(j=1; j<=n; j++){
             cout<<g[i][j]<<" ";
@@ -50,7 +50,7 @@ Enter the values of the weighted matrix(enter -1 if no direct edge is present)
 2 0 -1 -1
 -1 7 0 1
 6 -1 -1 0
-All pair shortest paths:
+All pair shortest path:
 0 10 3 4
 2 0 5 6
 7 7 0 1
